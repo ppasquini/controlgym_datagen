@@ -21,3 +21,5 @@ init_state = init_amplitude * np.cosh(
             1 / init_spread * (env.domain_coordinates - 0.7)
         ) ** (-1)
 ```
+
+To install the library see https://github.com/xiangyuan-zhang/controlgym
