@@ -9,13 +9,11 @@ And modify the function:
 
 For burgers, one shock scenario:
 ```python
-    def select_init_state(self, init_amplitude=None, init_spread=None):
-        init_state = init_amplitude * np.cosh(
-            1 / init_spread * (self.domain_coordinates - 0.5 * self.domain_length)
-        ) ** (-1) 
-        return init_state
+init_state = init_amplitude * np.cosh(
+        1 / init_spread * (self.domain_coordinates - 0.5 * self.domain_length)
+    ) ** (-1) 
 ```
-or, fot two shocks:
+or, for two shocks:
 ```python
 init_state = init_amplitude * np.cosh(
             1 / init_spread * (env.domain_coordinates - 0.3)
